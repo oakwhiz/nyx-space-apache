@@ -4,13 +4,13 @@ version = "0.1.0-beta2"
 edition = "2018"
 authors = ["Christopher Rabotin <christopher.rabotin@gmail.com>"]
 description = "A high-fidelity space mission toolkit, with orbit propagation, estimation and some systems engineering"
-homepage = "https://gitlab.com/chrisrabotin/nyx"
+homepage = "https://nyxspace.com/"
 documentation = "https://docs.rs/nyx-space/"
-repository = "https://gitlab.com/chrisrabotin/nyx"
+repository = "https://github.com/oakwhiz/nyx-space-apache"
 keywords = ["space", "mission", "design", "orbit", "estimation"]
 categories = ["science", "simulation"]
 readme = "README.md"
-license = "LGPLv3"
+license = "Apache-2.0"
 exclude = ["tests/GMAT_scripts/GMAT_V&V_ProcessAndResults.pdf", "examples", "data/*.gz", "rustfmt.toml", "de438s.xb"]
 
 [badges]
@@ -39,12 +39,14 @@ clap = "2"
 config = "0.10"
 regex = "1.1"
 pretty_env_logger = "0.3"
-dialoguer = "0.7"
+#dialoguer = "0.7"
+dialoguer = "0.11"
 glob = "0.3"
 rayon = "1.5"
 lazy_static = "1.4.0"
 approx = "0.4"
-bacon-sci = {git = "https://github.com/aftix/bacon", rev="9bae9bf39b33d24bba8e21b6ed2dfab09e3b2ce6"}
+#bacon-sci = {git = "https://github.com/aftix/bacon", rev="9bae9bf39b33d24bba8e21b6ed2dfab09e3b2ce6"}
+bacon-sci = "0.14.0"
 
 [profile.dev]
 opt-level = 0
